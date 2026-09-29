@@ -22,35 +22,58 @@ apart before reaching for a solution.
 <table>
   <tr>
     <td><samp>01</samp></td>
-    <td><a href="https://github.com/Deatron01/VRTelemetry"><b>VRTelemetry</b></a><br /><sub><samp>PYTHON · TYPESCRIPT · ELECTRON</samp></sub></td>
-    <td>A research instrument for VR studies. Records eye tracking, pose, physiology and hardware state to Parquet at headset rate, scores SSQ / NASA-TLX, and syncs to a central hub — queueing locally when the lab network is gone. Extended through out-of-process plugins: <a href="https://github.com/Deatron01/vrtelemetry-plugin-biosensor">BLE biosensors</a>, <a href="https://github.com/Deatron01/vrtelemetry-plugin-medical-analytics">medical analytics</a>, <a href="https://github.com/Deatron01/vrtelemetry-plugin-ros-unity-bridge">ROS 2 / Unity</a>.</td>
+    <td><b>VRTelemetry</b> <sub><samp>· PRIVATE</samp></sub><br /><sub><samp>PYTHON · TYPESCRIPT · ELECTRON</samp></sub></td>
+    <td>A research instrument for VR studies. Records eye tracking, pose, physiology and hardware state to Parquet at headset rate, scores SSQ / NASA-TLX, and syncs to a central hub — queueing locally when the lab network is gone. Extended through out-of-process plugins for BLE biosensors, medical analytics and a ROS 2 / Unity bridge.</td>
   </tr>
   <tr>
     <td><samp>02</samp></td>
-    <td><a href="https://github.com/Deatron01/vr-robot-bridge"><b>vr-robot-bridge</b></a><br /><sub><samp>C# · PYTHON · ROS · UNITY</samp></sub></td>
+    <td><b>vr-robot-bridge</b> <sub><samp>· PRIVATE</samp></sub><br /><sub><samp>C# · PYTHON · ROS · UNITY</samp></sub></td>
     <td>Streams live HMD and controller poses into a Gazebo / MoveIt robot hand and mirrors it in a Unity XR scene. OpenXR → REP-103 → Unity coordinate conversion, verified by tests; ROS runs in WSL2.</td>
   </tr>
   <tr>
     <td><samp>03</samp></td>
-    <td><a href="https://github.com/Deatron01/Project-Mimir"><b>Project Mimir</b></a><br /><sub><samp>FASTAPI · NODE · POSTGRES · RAG</samp></sub></td>
+    <td><a href="https://github.com/Deatron01/Project-Mimir"><b>Project-Mimir</b></a><br /><sub><samp>FASTAPI · NODE · POSTGRES · RAG</samp></sub></td>
     <td>Microservices that turn PDFs and DOCX files into exam questions. Semantic chunking, RAG over a vector store, JSON-schema guards against hallucination, a <code>SKIP LOCKED</code> worker pool, and hand-built Moodle XML / PDF export.</td>
   </tr>
   <tr>
     <td><samp>04</samp></td>
+    <td><a href="https://github.com/Deatron01/AIWorkGroup"><b>AIWorkGroup</b></a><br /><sub><samp>PYTHON · DOCKER · OLLAMA</samp></sub></td>
+    <td>A fully local multi-agent software foundry. Boss, designer, worker, tester and integrator agents coordinate over an event bus with a DAG tracker, human-in-the-loop checkpoints and a live dashboard — all on local models.</td>
+  </tr>
+  <tr>
+    <td><samp>05</samp></td>
     <td><a href="https://github.com/Deatron01/FreeTex"><b>FreeTex</b></a><br /><sub><samp>JAVASCRIPT · CODEMIRROR 6 · ELECTRON</samp></sub></td>
     <td>An Overleaf-style LaTeX editor that runs in the browser or as a desktop app with its own compile server. Local-first projects, BibTeX-aware autocompletion, zip import / export.</td>
   </tr>
   <tr>
-    <td><samp>05</samp></td>
-    <td><a href="https://github.com/Deatron01/AdBlocker"><b>AdBlocker</b></a><br /><sub><samp>MANIFEST V3</samp></sub></td>
+    <td><samp>06</samp></td>
+    <td><a href="https://github.com/Deatron01/Photoshop"><b>Photoshop</b></a><br /><sub><samp>C# · .NET 8 · WPF</samp></sub></td>
+    <td>An image editor for an image-processing course: filters and analytics split into separate core and analytics libraries behind an MVVM WPF front end.</td>
+  </tr>
+  <tr>
+    <td><samp>07</samp></td>
+    <td><a href="https://github.com/Deatron01/AdBlocker"><b>AdBlocker</b></a><br /><sub><samp>JAVASCRIPT · MANIFEST V3</samp></sub></td>
     <td>A Chrome extension on <code>declarativeNetRequest</code> with popup and redirect guards and on-the-fly domain learning. Collects nothing.</td>
   </tr>
   <tr>
-    <td><samp>06</samp></td>
+    <td><samp>08</samp></td>
     <td><a href="https://github.com/Deatron01/PhoneMirror"><b>PhoneMirror</b></a><br /><sub><samp>PYTHON · WEB</samp></sub></td>
     <td>Free, self-hosted phone mirroring that works on any device.</td>
   </tr>
 </table>
+
+<details>
+<summary><samp>MORE — SMALLER PROJECTS &amp; COURSEWORK</samp></summary>
+<br />
+<table>
+  <tr><td><a href="https://github.com/Deatron01/Szakszigo-Gyakorlo">Szakszigo-Gyakorlo</a></td><td><sub><samp>C#</samp></sub></td><td>Every classic programming theorem implemented and commented, for exam practice.</td></tr>
+  <tr><td><a href="https://github.com/Deatron01/Erika-konyhaja">Erika-konyhaja</a></td><td><sub><samp>VITE · TAILWIND</samp></sub></td><td>A live website for a small kitchen business.</td></tr>
+  <tr><td><a href="https://github.com/Deatron01/NKVGM1EMNF-GM1_LA_AT_Eng">NKVGM1EMNF-GM1_LA_AT_Eng</a></td><td><sub><samp>COURSEWORK</samp></sub></td><td>Generative AI.</td></tr>
+  <tr><td><a href="https://github.com/Deatron01/NIXSG1LBNE-SZTGUI_LA_02">NIXSG1LBNE-SZTGUI_LA_02</a></td><td><sub><samp>COURSEWORK</samp></sub></td><td>Software technology &amp; GUI design.</td></tr>
+  <tr><td><a href="https://github.com/Deatron01/NKXBATHBNE-BevAdTud_EA_MI1">NKXBATHBNE-BevAdTud_EA_MI1</a></td><td><sub><samp>COURSEWORK</samp></sub></td><td>Introduction to data science.</td></tr>
+  <tr><td><a href="https://github.com/Deatron01/Cpluszplusz-NSWCPVHBNF">Cpluszplusz-NSWCPVHBNF</a></td><td><sub><samp>COURSEWORK</samp></sub></td><td>C++.</td></tr>
+</table>
+</details>
 
 ### <samp>03 — STACK</samp>
 
