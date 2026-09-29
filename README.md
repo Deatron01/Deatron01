@@ -39,7 +39,7 @@ websites I design under the name **Dea**.
   </tr>
   <tr>
     <td><samp>04</samp></td>
-    <td><a href="https://github.com/Deatron01/WebDesignPortfolio"><b>Dea — Portfolio</b></a></td>
+    <td><a href="https://github.com/Deatron01/WebDesignPortfolio"><b>WebDesignPortfolio</b></a></td>
     <td>Plain HTML, CSS and JS. Two live sites, fifteen concepts, one design system.</td>
   </tr>
   <tr>
