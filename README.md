@@ -77,7 +77,7 @@ apart before reaching for a solution.
 <summary><samp>MORE — SMALLER PROJECTS &amp; COURSEWORK</samp></summary>
 <br />
 <table>
-  <tr><td><a href="https://github.com/Deatron01/Gen_AI_DP3HYC">Gen_AI_DP3HYC</a></td><td><sub><samp>PYTORCH LIGHTNING</samp></sub></td><td>A DCGAN that learns to generate flower images.</td></tr>
+  <tr><td><a href="https://github.com/Deatron01/Gen_AI_DP3HYC">Gen_AI_DP3HYC</a></td><td><sub><samp>PYTORCH LIGHTNING</samp></sub></td><td>Two generative models, a DCGAN and a VAE, trained to produce flower images.</td></tr>
   <tr><td><a href="https://github.com/Deatron01/Szakszigo-Gyakorlo">Szakszigo-Gyakorlo</a></td><td><sub><samp>C#</samp></sub></td><td>Every classic programming theorem implemented and commented, for exam practice.</td></tr>
   <tr><td><a href="https://github.com/Deatron01/Erika-konyhaja">Erika-konyhaja</a></td><td><sub><samp>VITE · TAILWIND</samp></sub></td><td>A live website for a small kitchen business.</td></tr>
   <tr><td><a href="https://github.com/Deatron01/NKVGM1EMNF-GM1_LA_AT_Eng">NKVGM1EMNF-GM1_LA_AT_Eng</a></td><td><sub><samp>COURSEWORK</samp></sub></td><td>Generative AI.</td></tr>
