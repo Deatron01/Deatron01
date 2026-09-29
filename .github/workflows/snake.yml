@@ -1,0 +1,30 @@
+name: Generate contribution snake
+
+on:
+  schedule:
+    - cron: "0 0 * * *"
+  workflow_dispatch:
+  push:
+    branches: [main]
+
+permissions:
+  contents: write
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    steps:
+      # Colours follow the Dea brand: charcoal / cream ground, purple ramp.
+      - uses: Platane/snk@v3
+        with:
+          github_user_name: ${{ github.repository_owner }}
+          outputs: |
+            dist/snake-light.svg?color_snake=#7d3de8&color_dots=#e8e2da,#d4c4f5,#b08ef0,#9463ec,#5b22c2
+            dist/snake-dark.svg?color_snake=#f3efea&color_dots=#282628,#3a2a5e,#5a35a0,#7d3de8,#b894f5
+
+      - uses: crazy-max/ghaction-github-pages@v4
+        with:
+          target_branch: output
+          build_dir: dist
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
