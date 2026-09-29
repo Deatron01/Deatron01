@@ -24,7 +24,7 @@ apart before reaching for a solution.
   <tr>
     <td><samp>01</samp></td>
     <td><b>VRTelemetry</b> <sub><samp>· PRIVATE</samp></sub><br /><sub><samp>PYTHON · TYPESCRIPT · ELECTRON</samp></sub></td>
-    <td>A research instrument for VR studies. Records eye tracking, pose, physiology and hardware state to Parquet at headset rate, scores SSQ / NASA-TLX, and syncs to a central hub — queueing locally when the lab network is gone. Extended through out-of-process plugins for BLE biosensors, medical analytics and a ROS 2 / Unity bridge.</td>
+    <td>A research instrument for VR studies. Records eye tracking, pose, physiology and hardware state to Parquet at headset rate, scores SSQ / NASA-TLX, and syncs to a central hub — queueing locally when the lab network is gone. Extended through out-of-process plugins, two of them open source: <a href="https://github.com/Deatron01/vrtelemetry-plugin-biosensor">BLE biosensors</a> and a <a href="https://github.com/Deatron01/vrtelemetry-plugin-ros-unity-bridge">ROS 2 / Unity bridge</a>.</td>
   </tr>
   <tr>
     <td><samp>02</samp></td>
@@ -80,9 +80,7 @@ apart before reaching for a solution.
   <tr><td><a href="https://github.com/Deatron01/Gen_AI_DP3HYC">Gen_AI_DP3HYC</a></td><td><sub><samp>PYTORCH LIGHTNING</samp></sub></td><td>Two generative models, a DCGAN and a VAE, trained to produce flower images.</td></tr>
   <tr><td><a href="https://github.com/Deatron01/Szakszigo-Gyakorlo">Szakszigo-Gyakorlo</a></td><td><sub><samp>C#</samp></sub></td><td>Every classic programming theorem implemented and commented, for exam practice.</td></tr>
   <tr><td><a href="https://github.com/Deatron01/Erika-konyhaja">Erika-konyhaja</a></td><td><sub><samp>VITE · TAILWIND</samp></sub></td><td>A live website for a small kitchen business.</td></tr>
-  <tr><td><a href="https://github.com/Deatron01/NKVGM1EMNF-GM1_LA_AT_Eng">NKVGM1EMNF-GM1_LA_AT_Eng</a></td><td><sub><samp>COURSEWORK</samp></sub></td><td>Generative AI.</td></tr>
   <tr><td><a href="https://github.com/Deatron01/NIXSG1LBNE-SZTGUI_LA_02">NIXSG1LBNE-SZTGUI_LA_02</a></td><td><sub><samp>COURSEWORK</samp></sub></td><td>Software technology &amp; GUI design.</td></tr>
-  <tr><td><a href="https://github.com/Deatron01/NKXBATHBNE-BevAdTud_EA_MI1">NKXBATHBNE-BevAdTud_EA_MI1</a></td><td><sub><samp>COURSEWORK</samp></sub></td><td>Introduction to data science.</td></tr>
   <tr><td><a href="https://github.com/Deatron01/Cpluszplusz-NSWCPVHBNF">Cpluszplusz-NSWCPVHBNF</a></td><td><sub><samp>COURSEWORK</samp></sub></td><td>C++.</td></tr>
 </table>
 </details>
