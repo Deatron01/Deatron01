@@ -43,26 +43,31 @@ apart before reaching for a solution.
   </tr>
   <tr>
     <td><samp>05</samp></td>
+    <td><a href="https://github.com/Deatron01/OpenRaConverterModul"><b>OpenRaConverterModul</b></a><br /><sub><samp>C# · ASP.NET CORE · DOCKER</samp></sub></td>
+    <td>Code synthesis for the OpenRA RTS engine: an API that turns unit, weapon and trait definitions into decision trees and generates the matching C# trait classes and YAML rules. Part of the OE_Lagrange project, alongside an <a href="https://github.com/Deatron01/OE_Lagrange_Side_Projects">entity-creator service, SQL schemas and a PowerShell environment manager</a>.</td>
+  </tr>
+  <tr>
+    <td><samp>06</samp></td>
     <td><a href="https://github.com/Deatron01/FreeTex"><b>FreeTex</b></a><br /><sub><samp>JAVASCRIPT · CODEMIRROR 6 · ELECTRON</samp></sub></td>
     <td>An Overleaf-style LaTeX editor that runs in the browser or as a desktop app with its own compile server. Local-first projects, BibTeX-aware autocompletion, zip import / export.</td>
   </tr>
   <tr>
-    <td><samp>06</samp></td>
+    <td><samp>07</samp></td>
     <td><a href="https://github.com/Deatron01/Photoshop"><b>Photoshop</b></a><br /><sub><samp>C# · .NET 8 · WPF</samp></sub></td>
     <td>An image editor for an image-processing course: filters and analytics split into separate core and analytics libraries behind an MVVM WPF front end.</td>
   </tr>
   <tr>
-    <td><samp>07</samp></td>
+    <td><samp>08</samp></td>
     <td><a href="https://github.com/Deatron01/ZizgoKereso"><b>ZizgoKereso</b></a><br /><sub><samp>PYTHON · OPENCV · PYQT6 · C# · BLENDER</samp></sub></td>
     <td>"Where's Zizgő?" — finds a figure in a busy photo. Blender renders the reference set across camera angles and lighting, then HSV colour-masked template matching locates the best hit, with a live heatmap view. Built twice: PyQt6 + OpenCV and C# WinForms.</td>
   </tr>
   <tr>
-    <td><samp>08</samp></td>
+    <td><samp>09</samp></td>
     <td><a href="https://github.com/Deatron01/AdBlocker"><b>AdBlocker</b></a><br /><sub><samp>JAVASCRIPT · MANIFEST V3</samp></sub></td>
     <td>A Chrome extension on <code>declarativeNetRequest</code> with popup and redirect guards and on-the-fly domain learning. Collects nothing.</td>
   </tr>
   <tr>
-    <td><samp>09</samp></td>
+    <td><samp>10</samp></td>
     <td><a href="https://github.com/Deatron01/PhoneMirror"><b>PhoneMirror</b></a><br /><sub><samp>PYTHON · WEB</samp></sub></td>
     <td>Free, self-hosted phone mirroring that works on any device.</td>
   </tr>
@@ -72,6 +77,7 @@ apart before reaching for a solution.
 <summary><samp>MORE — SMALLER PROJECTS &amp; COURSEWORK</samp></summary>
 <br />
 <table>
+  <tr><td><a href="https://github.com/Deatron01/Gen_AI_DP3HYC">Gen_AI_DP3HYC</a></td><td><sub><samp>PYTORCH LIGHTNING</samp></sub></td><td>A DCGAN that learns to generate flower images.</td></tr>
   <tr><td><a href="https://github.com/Deatron01/Szakszigo-Gyakorlo">Szakszigo-Gyakorlo</a></td><td><sub><samp>C#</samp></sub></td><td>Every classic programming theorem implemented and commented, for exam practice.</td></tr>
   <tr><td><a href="https://github.com/Deatron01/Erika-konyhaja">Erika-konyhaja</a></td><td><sub><samp>VITE · TAILWIND</samp></sub></td><td>A live website for a small kitchen business.</td></tr>
   <tr><td><a href="https://github.com/Deatron01/NKVGM1EMNF-GM1_LA_AT_Eng">NKVGM1EMNF-GM1_LA_AT_Eng</a></td><td><sub><samp>COURSEWORK</samp></sub></td><td>Generative AI.</td></tr>
