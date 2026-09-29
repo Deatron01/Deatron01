@@ -1,73 +1,66 @@
-<!-- Header -->
-<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=0:7F00FF,50:E100FF,100:00D4FF&height=200&section=header&text=Hi,%20I'm%20Dea%20👋&fontSize=55&fontColor=ffffff&animation=fadeIn&fontAlignY=38&desc=Student%20%E2%80%A2%20Developer%20%E2%80%A2%20VR%20and%20AI%20tinkerer&descAlignY=58&descSize=18" />
-
 <p align="center">
-  <a href="https://git.io/typing-svg">
-    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&pause=1000&color=B26BFF&center=true&vCenter=true&width=600&lines=Student+at+%C3%93buda+University+%F0%9F%8E%93;Working+at+the+Biotech+Research+Lab+%F0%9F%A7%AC;Building+VR+telemetry+%2B+robot+bridges+%F0%9F%A5%BD%F0%9F%A4%96;AI-powered+tools+%26+web+design+%E2%9C%A8" alt="Typing SVG" />
+  <a href="https://deawebdesign.netlify.app/">
+    <img src="./assets/banner.webp" alt="Dea — Little chaos in a quiet mind." width="100%" />
   </a>
 </p>
 
 <p align="center">
-  <img src="https://komarev.com/ghpvc/?username=Deatron01&style=for-the-badge&color=blueviolet&label=PROFILE+VIEWS" alt="Profile views" />
-  <a href="https://deawebdesign.netlify.app/"><img src="https://img.shields.io/badge/Portfolio-deawebdesign-00D4FF?style=for-the-badge&logo=netlify&logoColor=white" alt="Portfolio" /></a>
-  <img src="https://img.shields.io/badge/Based%20in-Budapest-E100FF?style=for-the-badge&logo=googlemaps&logoColor=white" alt="Budapest" />
+  <samp>BUDAPEST · ÓBUDA UNIVERSITY · <a href="https://deawebdesign.netlify.app/">DEAWEBDESIGN.NETLIFY.APP</a></samp>
 </p>
 
----
+<img src="./assets/divider.svg" width="100%" alt="" />
 
-## 🧑‍💻 About me
+### <samp>01 — ABOUT</samp>
 
+A designer who codes, and a developer who cares.
 
-- 🎓 Student at **Óbuda University**
-- 🧬 Working at the **Óbuda University EKIK – Biotech Research Lab**
-- 🥽 Building **VR telemetry** pipelines that bridge OpenXR headsets to **ROS 2** and **Unity**
-- 🤖 Exploring **generative AI** — like auto-generating exam questions from raw documents
-- 🎨 Designing websites on the side → [deawebdesign.netlify.app](https://deawebdesign.netlify.app/)
-- 📍 Budapest, Hungary
+I study computer engineering at Óbuda University and do research at the university's
+Biotech Research Lab. Research taught me to take a problem apart before reaching for a
+solution, and that habit shapes everything I build — from VR telemetry pipelines to the
+websites I design under the name **Dea**.
 
-## 🛠️ Tech I use
+### <samp>02 — SELECTED WORK</samp>
+
+<table>
+  <tr>
+    <td><samp>01</samp></td>
+    <td><a href="https://github.com/Deatron01/VRTelemetry"><b>VRTelemetry</b></a></td>
+    <td>Live OpenXR headset telemetry, with plugins for a <a href="https://github.com/Deatron01/vrtelemetry-plugin-ros-unity-bridge">ROS 2 / Unity bridge</a>, <a href="https://github.com/Deatron01/vrtelemetry-plugin-medical-analytics">SSQ &amp; NASA-TLX scoring</a> and <a href="https://github.com/Deatron01/vrtelemetry-plugin-biosensor">biosensors</a>.</td>
+  </tr>
+  <tr>
+    <td><samp>02</samp></td>
+    <td><a href="https://github.com/Deatron01/vr-robot-bridge"><b>vr-robot-bridge</b></a></td>
+    <td>Driving a robot hand in Unity from VR, through ROS.</td>
+  </tr>
+  <tr>
+    <td><samp>03</samp></td>
+    <td><a href="https://github.com/Deatron01/Project-Mimir"><b>Project Mimir</b></a></td>
+    <td>Microservices that turn raw documents into structured exam questions.</td>
+  </tr>
+  <tr>
+    <td><samp>04</samp></td>
+    <td><a href="https://github.com/Deatron01/WebDesignPortfolio"><b>Dea — Portfolio</b></a></td>
+    <td>Plain HTML, CSS and JS. Two live sites, fifteen concepts, one design system.</td>
+  </tr>
+  <tr>
+    <td><samp>05</samp></td>
+    <td><a href="https://github.com/Deatron01/FreeTex"><b>FreeTex</b></a></td>
+    <td>Why pay to compile LaTeX?</td>
+  </tr>
+  <tr>
+    <td><samp>06</samp></td>
+    <td><a href="https://github.com/Deatron01/PhoneMirror"><b>PhoneMirror</b></a></td>
+    <td>Free, self-hosted phone mirroring for any device.</td>
+  </tr>
+</table>
+
+### <samp>03 — TOOLS</samp>
+
+<samp>C# · Python · JavaScript · Unity · ROS 2 · OpenXR · Astro · Figma · GSAP · Three.js</samp>
+
+<img src="./assets/divider.svg" width="100%" alt="" />
 
 <p align="center">
-  <a href="https://skillicons.dev">
-    <img src="https://skillicons.dev/icons?i=cs,python,js,html,css,php,cpp,astro,unity,ros,dotnet,git,github,vscode,latex&perline=8" alt="Skills" />
-  </a>
+  <img src="./assets/icon.png" width="56" alt="Dea" /><br />
+  <sub><i>Little chaos in a quiet mind.</i></sub>
 </p>
-
-## 🚀 Featured projects
-
-| Project | What it does |
-|---|---|
-| 🧠 [**Project-Mimir**](https://github.com/Deatron01/Project-Mimir) | AI-driven microservice system that turns raw documents into structured tests and exam questions |
-| 🥽 [**VRTelemetry**](https://github.com/Deatron01/VRTelemetry) | VR telemetry platform with plugins for [ROS/Unity bridging](https://github.com/Deatron01/vrtelemetry-plugin-ros-unity-bridge), [medical analytics](https://github.com/Deatron01/vrtelemetry-plugin-medical-analytics) & [biosensors](https://github.com/Deatron01/vrtelemetry-plugin-biosensor) |
-| 🦾 [**vr-robot-bridge**](https://github.com/Deatron01/vr-robot-bridge) | VR telemetry → ROS ↔ Unity robot-hand bridge |
-| 📄 [**FreeTex**](https://github.com/Deatron01/FreeTex) | Why pay to compile LaTeX? Use this instead |
-| 📱 [**PhoneMirror**](https://github.com/Deatron01/PhoneMirror) | Free, self-hosted phone mirroring that works on any device |
-| 🛡️ [**AdBlocker**](https://github.com/Deatron01/AdBlocker) | My own ad blocker |
-
-## 📊 GitHub stats
-
-<p align="center">
-  <img src="./profile-summary-card-output/radical/0-profile-details.svg" alt="Profile details" />
-</p>
-
-<p align="center">
-  <img height="180" src="./profile-summary-card-output/radical/3-stats.svg" alt="Stats" />
-  <img height="180" src="./profile-summary-card-output/radical/1-repos-per-language.svg" alt="Repos per language" />
-</p>
-
-<p align="center">
-  <img src="https://streak-stats.demolab.com?user=Deatron01&theme=radical&hide_border=true" alt="Streak" />
-</p>
-
-## 🐍 Contribution snake
-
-<p align="center">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Deatron01/Deatron01/output/github-contribution-grid-snake-dark.svg" />
-    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Deatron01/Deatron01/output/github-contribution-grid-snake.svg" />
-    <img alt="Contribution snake" src="https://raw.githubusercontent.com/Deatron01/Deatron01/output/github-contribution-grid-snake.svg" />
-  </picture>
-</p>
-
-<!-- Footer -->
-<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=0:00D4FF,50:E100FF,100:7F00FF&height=120&section=footer" />
