@@ -55,10 +55,10 @@ apart before reaching for a solution.
 ### <samp>03 — STACK</samp>
 
 <table>
-  <tr><td><samp>LANGUAGES</samp></td><td>Python · C# · TypeScript · JavaScript · C++ · PHP · LaTeX</td></tr>
-  <tr><td><samp>SYSTEMS</samp></td><td>ROS / ROS 2 · Unity XR · OpenXR · Electron · FastAPI · Node.js</td></tr>
-  <tr><td><samp>DATA</samp></td><td>PostgreSQL · Parquet · MinIO · vector search / RAG · local LLMs (Ollama)</td></tr>
-  <tr><td><samp>TOOLING</samp></td><td>Git · Docker · WSL2 · GitHub Actions</td></tr>
+  <tr><td><samp>LANGUAGES</samp></td><td><picture><source media="(prefers-color-scheme: light)" srcset="https://skillicons.dev/icons?i=python,cs,ts,js,cpp,php,latex&perline=10&theme=light" /><img src="https://skillicons.dev/icons?i=python,cs,ts,js,cpp,php,latex&perline=10&theme=dark" alt="Python · C# · TypeScript · JavaScript · C++ · PHP · LaTeX" height="40" /></picture></td></tr>
+  <tr><td><samp>SYSTEMS</samp></td><td><picture><source media="(prefers-color-scheme: light)" srcset="https://skillicons.dev/icons?i=ros,unity,electron,fastapi,nodejs&perline=10&theme=light" /><img src="https://skillicons.dev/icons?i=ros,unity,electron,fastapi,nodejs&perline=10&theme=dark" alt="ROS / ROS 2 · Unity XR · Electron · FastAPI · Node.js" height="40" /></picture><br /><sub>+ OpenXR</sub></td></tr>
+  <tr><td><samp>DATA</samp></td><td><picture><source media="(prefers-color-scheme: light)" srcset="https://skillicons.dev/icons?i=postgres&perline=10&theme=light" /><img src="https://skillicons.dev/icons?i=postgres&perline=10&theme=dark" alt="PostgreSQL" height="40" /></picture><br /><sub>+ Parquet · MinIO · vector search / RAG · local LLMs (Ollama)</sub></td></tr>
+  <tr><td><samp>TOOLING</samp></td><td><picture><source media="(prefers-color-scheme: light)" srcset="https://skillicons.dev/icons?i=git,docker,linux,githubactions,vscode&perline=10&theme=light" /><img src="https://skillicons.dev/icons?i=git,docker,linux,githubactions,vscode&perline=10&theme=dark" alt="Git · Docker · Linux · GitHub Actions · VS Code" height="40" /></picture><br /><sub>+ WSL2</sub></td></tr>
 </table>
 
 ### <samp>04 — ACTIVITY</samp>
