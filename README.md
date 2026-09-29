@@ -81,7 +81,6 @@ apart before reaching for a solution.
   <tr><td><a href="https://github.com/Deatron01/Szakszigo-Gyakorlo">Szakszigo-Gyakorlo</a></td><td><sub><samp>C#</samp></sub></td><td>Every classic programming theorem implemented and commented, for exam practice.</td></tr>
   <tr><td><a href="https://github.com/Deatron01/Erika-konyhaja">Erika-konyhaja</a></td><td><sub><samp>VITE · TAILWIND</samp></sub></td><td>A live website for a small kitchen business.</td></tr>
   <tr><td><a href="https://github.com/Deatron01/NIXSG1LBNE-SZTGUI_LA_02">NIXSG1LBNE-SZTGUI_LA_02</a></td><td><sub><samp>COURSEWORK</samp></sub></td><td>Software technology &amp; GUI design.</td></tr>
-  <tr><td><a href="https://github.com/Deatron01/Cpluszplusz-NSWCPVHBNF">Cpluszplusz-NSWCPVHBNF</a></td><td><sub><samp>COURSEWORK</samp></sub></td><td>C++.</td></tr>
 </table>
 </details>
 
