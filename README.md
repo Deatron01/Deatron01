@@ -47,16 +47,16 @@
 ## 📊 GitHub stats
 
 <p align="center">
-  <img height="170" src="https://github-readme-stats.vercel.app/api?username=Deatron01&show_icons=true&theme=radical&hide_border=true&count_private=true" alt="Stats" />
-  <img height="170" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Deatron01&layout=compact&theme=radical&hide_border=true&langs_count=6" alt="Top languages" />
+  <img src="./profile-summary-card-output/radical/0-profile-details.svg" alt="Profile details" />
+</p>
+
+<p align="center">
+  <img height="180" src="./profile-summary-card-output/radical/3-stats.svg" alt="Stats" />
+  <img height="180" src="./profile-summary-card-output/radical/1-repos-per-language.svg" alt="Repos per language" />
 </p>
 
 <p align="center">
   <img src="https://streak-stats.demolab.com?user=Deatron01&theme=radical&hide_border=true" alt="Streak" />
-</p>
-
-<p align="center">
-  <img width="100%" src="https://github-readme-activity-graph.vercel.app/graph?username=Deatron01&theme=react-dark&hide_border=true&area=true" alt="Activity graph" />
 </p>
 
 ## 🐍 Contribution snake
