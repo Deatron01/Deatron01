@@ -3,7 +3,8 @@
 </p>
 
 <p align="center">
-  <samp>COMPUTER ENGINEERING · ÓBUDA UNIVERSITY · BIOTECH RESEARCH LAB · BUDAPEST</samp>
+  <samp>COMPUTER ENGINEERING · ÓBUDA UNIVERSITY · BIOTECH RESEARCH LAB · BUDAPEST</samp><br />
+  <samp><a href="https://www.linkedin.com/in/nagy-istv%C3%A1n-bence-54b2681b0/">LINKEDIN ↗</a> · <a href="https://deawebdesign.netlify.app/">PORTFOLIO ↗</a></samp>
 </p>
 
 <img src="./assets/divider.svg" width="100%" alt="" />
