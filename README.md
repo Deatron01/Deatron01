@@ -52,11 +52,16 @@ apart before reaching for a solution.
   </tr>
   <tr>
     <td><samp>07</samp></td>
+    <td><a href="https://github.com/Deatron01/ZizgoKereso"><b>ZizgoKereso</b></a><br /><sub><samp>PYTHON · OPENCV · PYQT6 · C# · BLENDER</samp></sub></td>
+    <td>"Where's Zizgő?" — finds a figure in a busy photo. Blender renders the reference set across camera angles and lighting, then HSV colour-masked template matching locates the best hit, with a live heatmap view. Built twice: PyQt6 + OpenCV and C# WinForms.</td>
+  </tr>
+  <tr>
+    <td><samp>08</samp></td>
     <td><a href="https://github.com/Deatron01/AdBlocker"><b>AdBlocker</b></a><br /><sub><samp>JAVASCRIPT · MANIFEST V3</samp></sub></td>
     <td>A Chrome extension on <code>declarativeNetRequest</code> with popup and redirect guards and on-the-fly domain learning. Collects nothing.</td>
   </tr>
   <tr>
-    <td><samp>08</samp></td>
+    <td><samp>09</samp></td>
     <td><a href="https://github.com/Deatron01/PhoneMirror"><b>PhoneMirror</b></a><br /><sub><samp>PYTHON · WEB</samp></sub></td>
     <td>Free, self-hosted phone mirroring that works on any device.</td>
   </tr>
