@@ -43,8 +43,8 @@ apart before reaching for a solution.
   </tr>
   <tr>
     <td><samp>05</samp></td>
-    <td><a href="https://github.com/Deatron01/OpenRaConverterModul"><b>OpenRaConverterModul</b></a><br /><sub><samp>C# · ASP.NET CORE · DOCKER</samp></sub></td>
-    <td>Code synthesis for the OpenRA RTS engine: an API that turns unit, weapon and trait definitions into decision trees and generates the matching C# trait classes and YAML rules. Part of the OE_Lagrange project, alongside an <a href="https://github.com/Deatron01/OE_Lagrange_Side_Projects">entity-creator service, SQL schemas and a PowerShell environment manager</a>.</td>
+    <td><b>TinyTribe</b> <sub><samp>· PRIVATE</samp></sub><br /><sub><samp>UNITY 6 · C# · PYTORCH · ONNX</samp></sub></td>
+    <td>A village survival simulation built to train its villagers instead of scripting them. A deterministic C# rules engine with no Unity types runs both in the game and as a standalone simulator for PyTorch; a CNN + LSTM policy learns by imitation, DAgger and PPO, then plays in-game through ONNX. Every experiment is journaled against a scripted baseline.</td>
   </tr>
   <tr>
     <td><samp>06</samp></td>
