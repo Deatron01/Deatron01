@@ -28,7 +28,7 @@ apart before reaching for a solution.
   </tr>
   <tr>
     <td><samp>02</samp></td>
-    <td><b>vr-robot-bridge</b> <sub><samp>· PRIVATE</samp></sub><br /><sub><samp>C# · PYTHON · ROS · UNITY</samp></sub></td>
+    <td><a href="https://github.com/Deatron01/vr-robot-bridge"><b>vr-robot-bridge</b></a><br /><sub><samp>C# · PYTHON · ROS · UNITY</samp></sub></td>
     <td>Streams live HMD and controller poses into a Gazebo / MoveIt robot hand and mirrors it in a Unity XR scene. OpenXR → REP-103 → Unity coordinate conversion, verified by tests; ROS runs in WSL2.</td>
   </tr>
   <tr>
@@ -43,7 +43,7 @@ apart before reaching for a solution.
   </tr>
   <tr>
     <td><samp>05</samp></td>
-    <td><b>TinyTribe</b> <sub><samp>· PRIVATE</samp></sub><br /><sub><samp>UNITY 6 · C# · PYTORCH · ONNX</samp></sub></td>
+    <td><a href="https://github.com/Deatron01/TinyTribe"><b>TinyTribe</b></a><br /><sub><samp>UNITY 6 · C# · PYTORCH · ONNX</samp></sub></td>
     <td>A village survival simulation built to train its villagers instead of scripting them. A deterministic C# rules engine with no Unity types runs both in the game and as a standalone simulator for PyTorch; a CNN + LSTM policy learns by imitation, DAgger and PPO, then plays in-game through ONNX. Every experiment is journaled against a scripted baseline.</td>
   </tr>
   <tr>
