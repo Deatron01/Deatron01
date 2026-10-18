@@ -23,7 +23,7 @@ apart before reaching for a solution.
 <table>
   <tr>
     <td><samp>01</samp></td>
-    <td><b>VRTelemetry</b> <sub><samp>· PRIVATE</samp></sub><br /><sub><samp>PYTHON · TYPESCRIPT · ELECTRON</samp></sub></td>
+    <td><a href="https://github.com/Deatron01/VRTelemetry"><b>VRTelemetry</b></a><br /><sub><samp>PYTHON · TYPESCRIPT · ELECTRON</samp></sub></td>
     <td>A research instrument for VR studies. Records eye tracking, pose, physiology and hardware state to Parquet at headset rate, scores SSQ / NASA-TLX, and syncs to a central hub — queueing locally when the lab network is gone. Extended through out-of-process plugins, two of them open source: <a href="https://github.com/Deatron01/vrtelemetry-plugin-biosensor">BLE biosensors</a> and a <a href="https://github.com/Deatron01/vrtelemetry-plugin-ros-unity-bridge">ROS 2 / Unity bridge</a>.</td>
   </tr>
   <tr>
