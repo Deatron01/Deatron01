@@ -1,0 +1,36 @@
+name: Draw Dea
+
+# Every hour: draw what Dea is doing right now in her pixel-art home (Budapest time decides
+# day/night, bedtime and her routine) and publish it to the dea-output branch, like the snake.
+# The renderer and her sprites live on the `dea` branch.
+
+on:
+  schedule:
+    - cron: "17 * * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  draw:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: dea
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - run: pip install pillow
+
+      - run: python dea_now.py --assets assets --out dist/dea.webp
+
+      - uses: crazy-max/ghaction-github-pages@v4
+        with:
+          target_branch: dea-output
+          build_dir: dist
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

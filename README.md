@@ -93,7 +93,15 @@ apart before reaching for a solution.
   <tr><td><samp>TOOLING</samp></td><td><picture><source media="(prefers-color-scheme: light)" srcset="https://skillicons.dev/icons?i=git,docker,linux,githubactions,vscode&perline=10&theme=light" /><img src="https://skillicons.dev/icons?i=git,docker,linux,githubactions,vscode&perline=10&theme=dark" alt="Git · Docker · Linux · GitHub Actions · VS Code" height="40" /></picture><br /><sub>+ WSL2</sub></td></tr>
 </table>
 
-### <samp>04 — ACTIVITY</samp>
+### <samp>04 — DEA, RIGHT NOW</samp>
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/Deatron01/Deatron01/dea-output/dea.webp" width="100%" alt="What Dea is doing right now in her pixel-art home, redrawn every hour" />
+</p>
+
+<p align="center"><sub><samp>REDRAWN EVERY HOUR · BUDAPEST TIME · ASLEEP 23:00–07:00</samp></sub></p>
+
+### <samp>05 — ACTIVITY</samp>
 
 <p align="center">
   <picture>
