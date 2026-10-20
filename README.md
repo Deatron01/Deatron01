@@ -10,4 +10,4 @@ python dea_now.py --assets assets --out dist/dea.webp
 ```
 
 and publishes `dist/` to the `dea-output` branch. `assets/` holds the rendered layers of her
-pixel-art home and her animations. Try a moment with `--at 2026-10-21T19:15` or `--scene reading`.
+pixel-art home and her animations. Try a moment with `--at 2026-10-21T19:15` or `--scene reading` (`--scene walk` shows her walking to the next activity).

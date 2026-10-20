@@ -2,12 +2,13 @@
 
 Picks an activity from the time of day in Budapest (asleep 23:00-07:00, otherwise a seeded pick
 per hour from a morning / day / evening routine), draws one loop of it in her room with the
-day/night lighting, and adds a caption bar.
+day/night lighting, and adds a caption bar. Some hours she is between activities instead: she
+walks across the floor (side view) toward the next hour's activity.
 
   python dea_now.py --assets assets --out dea.webp [--at 2026-10-21T14:30] [--scene reading]
 """
 import argparse, json, math, random
-from datetime import datetime
+from datetime import datetime, timedelta
 from pathlib import Path
 from zoneinfo import ZoneInfo
 from PIL import Image, ImageChops
@@ -42,13 +43,30 @@ SCENES = {
     "write":     dict(anim=["dea_write"], pos=(216, 136), label="is writing in her journal"),
     "potion":    dict(anim=["dea_potion"], pos=(118, 102), label="is brewing something (probably tea)"),
     "scroll":    dict(anim=["dea_scroll"], pos=(320, 140), label="is scrolling her phone"),
+    # between activities: she walks across the floor (side view) toward what she does next
+    "walk":      dict(walk=True, label="is off to ..."),
 }
 ROUTINE = {
-    "morning": dict(cook=3, tea=3, fridge=1, potion=1, water=2, flower=2, music=1),
+    "morning": dict(cook=3, tea=3, fridge=1, potion=1, water=2, flower=2, music=1, walk=2),
     "day": dict(desk=3, reading=2, arcade=2, claw=2, game=2, laptop=2, learn=1, write=1, pet_cat=2,
-                music=1, water=1, hug=1, bmo_dance=1, scroll=1),
-    "evening": dict(kotatsu=3, game=2, hug=2, reading=2, bmo_dance=1, music=1, tea=1, moon=2),
+                music=1, water=1, hug=1, bmo_dance=1, scroll=1, walk=3),
+    "evening": dict(kotatsu=3, game=2, hug=2, reading=2, bmo_dance=1, music=1, tea=1, moon=2, walk=1),
 }
+
+# Where she is heading, as the caption says it: "DEA is off to <this>".
+GOING_TO = {
+    "cook": "make pancakes", "fridge": "raid the fridge", "desk": "code at her desk",
+    "arcade": "play the arcade", "claw": "try the claw machine", "kotatsu": "warm up under the kotatsu",
+    "sleep": "bed", "reading": "read in her nook", "hug": "hug her bunny", "pet_cat": "pet the cat",
+    "bmo_dance": "dance with BMO", "moon": "look at the moon", "tea": "make some tea",
+    "game": "game on the beanbag", "laptop": "code on her laptop", "music": "put on some music",
+    "water": "water the monstera", "flower": "check on her pansies", "learn": "study",
+    "write": "write in her journal", "potion": "brew something", "scroll": "scroll her phone",
+}
+FLOOR_Y = 166             # her feet on the open strip between the kotatsu and the futon
+LANE = (135, 362)         # x range of that strip (sprite centre)
+WALK_PX = 112             # how far she walks: 8 steps of the walk cycle
+STRIDE = 14               # px per 6-frame walk cycle, so the planted foot does not slide
 
 def night_amount(h):
     """0 = day, 1 = night; dusk 18:30-20:00, dawn 6:00-7:00 (same as the app)."""
@@ -65,6 +83,39 @@ def choose(now):
     if night_amount(h) <= 0.5: options.pop("moon", None)
     rng = random.Random(now.strftime("%Y-%m-%d-%H"))
     return rng.choices(list(options), weights=list(options.values()))[0]
+
+def destination(now):
+    """What she walks off to: the next hour's activity (or another pick when that is a walk too)."""
+    nxt = choose(now + timedelta(hours=1))
+    if nxt != "walk": return nxt
+    h = now.hour + now.minute / 60
+    period = "morning" if h < 10 else "day" if h < 18 else "evening"
+    options = {k: v for k, v in ROUTINE[period].items() if k not in ("walk", "moon")}
+    rng = random.Random("walk-" + now.strftime("%Y-%m-%d-%H"))
+    return rng.choices(list(options), weights=list(options.values()))[0]
+
+def walk_scene(room, goal):
+    """A straight walk along the floor strip toward the goal, then a short idle facing it."""
+    s = SCENES[goal]
+    if "act" in s:
+        a = room.acts[s["act"]]; tx = a["x"] + a["w"] / 2
+    else: tx = s["pos"][0]
+    lo, hi = LANE
+    if tx >= (lo + hi) / 2: end = min(max(tx, lo + WALK_PX), hi); start = end - WALK_PX; d = 1
+    else: end = max(min(tx, hi - WALK_PX), lo); start = end + WALK_PX; d = -1
+    side = "e" if d > 0 else "w"
+    return dict(walk=dict(start=start, d=d, walk=f"dea_walk_{side}", idle=f"dea_idle_{side}"),
+                label=f"is off to {GOING_TO[goal]}")
+
+def walk_at(dea, w, t):
+    """Sprite name, frame index and centre x at time t of the walk."""
+    ms = dea[w["walk"]]["ms"]; n = len(ms)
+    steps = math.ceil(WALK_PX / STRIDE) * n
+    walk_ms = steps * ms[0]
+    if t < walk_ms:
+        k = int(t // ms[0])
+        return w["walk"], k % n, w["start"] + w["d"] * round(k * STRIDE / n)
+    return w["idle"], frame_at(dea[w["idle"]]["ms"], t - walk_ms), w["start"] + w["d"] * WALK_PX
 
 # ---------------------------------------------------------------- 3x5 pixel font
 # Glyphs from pxl (github.com/crsolver/claude-pxl, MIT).
@@ -129,6 +180,14 @@ class Room:
             z = a["y"] + a["h"]
             def actor():
                 out.alpha_composite(self.cell(f"acts/{a['id']}_{v}.png", frame_at(a["ms"], t), a["w"], a["h"]), (a["x"], a["y"]))
+        elif "walk" in scene:
+            name, fi, cx = walk_at(self.m["dea"], scene["walk"], t)
+            d = self.m["dea"][name]
+            x, y = round(cx - d["w"] / 2), FLOOR_Y - d["h"]
+            z = FLOOR_Y
+            def actor():
+                spr = self.cell(f"dea/{name}.png", fi, d["w"], d["h"])
+                out.alpha_composite(self.lit(spr, x, y) if v == "night" else spr, (x, y))
         else:
             name, local = anim_at(self.m["dea"], scene["anim"], t)
             d = self.m["dea"][name]
@@ -171,6 +230,10 @@ def anim_at(dea, names, t):
 def timeline(room, scene):
     """Frame start times and durations for one loop of the scene (at least ~2.4 s)."""
     if "act" in scene: ms = list(room.acts[scene["act"]]["ms"] or [200])
+    elif "walk" in scene:
+        w, dea = scene["walk"], room.m["dea"]
+        ms = dea[w["walk"]]["ms"] * math.ceil(WALK_PX / STRIDE) + dea[w["idle"]]["ms"]
+        return [sum(ms[:i]) for i in range(len(ms))], ms   # one walk, no repeats
     else: ms = [m for n in scene["anim"] for m in room.m["dea"][n]["ms"]]
     loops = max(1, math.ceil(2400 / sum(ms)))
     ms = ms * loops
@@ -180,7 +243,7 @@ def timeline(room, scene):
 def render(assets, now, scene_id=None):
     room = Room(assets)
     sid = scene_id or choose(now)
-    scene = SCENES[sid]
+    scene = walk_scene(room, destination(now)) if sid == "walk" else SCENES[sid]
     n = night_amount(now.hour + now.minute / 60)
     caption = f"DEA {scene['label']}"
     stamp = f"{now:%H}:00 BUDAPEST"
