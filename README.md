@@ -99,7 +99,7 @@ apart before reaching for a solution.
   <img src="https://raw.githubusercontent.com/Deatron01/Deatron01/dea-output/dea.webp" width="100%" alt="What Dea is doing right now in her pixel-art home, redrawn every hour" />
 </p>
 
-<p align="center"><sub><samp>REDRAWN EVERY HOUR · BUDAPEST TIME · ASLEEP 23:00–07:00</samp></sub></p>
+<p align="center"><sub><samp>REDRAWN EVERY HOUR · BUDAPEST TIME · ASLEEP 00:00–06:00</samp></sub></p>
 
 ### <samp>05 — ACTIVITY</samp>
 
