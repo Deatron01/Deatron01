@@ -1,13 +1,20 @@
 name: Draw Dea
 
-# Every hour: draw what Dea is doing right now in her pixel-art home (Budapest time decides
-# day/night, bedtime and her routine) and publish it to the dea-output branch, like the snake.
+# Draw what Dea is doing right now in her pixel-art home (Budapest time decides day/night,
+# bedtime and her routine) and publish it to the dea-output branch, like the snake.
 # The renderer and her sprites live on the `dea` branch.
+# GitHub runs schedules on a best-effort basis and drops many of them, so this asks for a run
+# every 10 minutes to keep the picture close to the real time. Each run replaces the picture
+# (no history is kept).
 
 on:
   schedule:
-    - cron: "17 * * * *"
+    - cron: "*/10 * * * *"
   workflow_dispatch:
+
+concurrency:
+  group: draw-dea
+  cancel-in-progress: true
 
 permissions:
   contents: write

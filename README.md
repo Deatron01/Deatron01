@@ -96,10 +96,10 @@ apart before reaching for a solution.
 ### <samp>04 — DEA, RIGHT NOW</samp>
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/Deatron01/Deatron01/dea-output/dea.webp" width="100%" alt="What Dea is doing right now in her pixel-art home, redrawn every hour" />
+  <img src="https://raw.githubusercontent.com/Deatron01/Deatron01/dea-output/dea.webp" width="100%" alt="What Dea is doing right now in her pixel-art home, redrawn through the day" />
 </p>
 
-<p align="center"><sub><samp>REDRAWN EVERY HOUR · BUDAPEST TIME · ASLEEP 00:00–06:00</samp></sub></p>
+<p align="center"><sub><samp>REDRAWN EVERY FEW MINUTES · BUDAPEST TIME · ASLEEP 00:00–06:00</samp></sub></p>
 
 ### <samp>05 — ACTIVITY</samp>
 
