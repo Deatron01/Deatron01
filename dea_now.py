@@ -23,7 +23,6 @@ SCENES = {
     "cook":      dict(act="cook", label="is making pancakes"),
     "fridge":    dict(act="fridge", hide=["fridge"], label="is raiding the fridge"),
     "desk":      dict(act="desk", hide=["gaming_chair"], label="is coding at her desk"),
-    "arcade":    dict(act="arcade", hide=["arcade"], label="is playing the arcade"),
     "claw":      dict(act="claw", hide=["claw_machine"], label="is trying the claw machine"),
     "kotatsu":   dict(act="kotatsu", hide=["kotatsu", "cat", "candles", "zab_back"], label="is warm under the kotatsu"),
     "sleep":     dict(act="sleep", hide=["futon"], label="is asleep. shh."),
@@ -45,7 +44,7 @@ SCENES = {
     "scroll":    dict(anim=["dea_scroll"], pos=(320, 140), label="is scrolling her phone"),
 }
 # Her day, by hour (Budapest time): [start, end) -> what she may be doing, with weights.
-FREE_TIME = dict(kotatsu=3, game=3, arcade=2, claw=2, hug=2, reading=2, pet_cat=2, bmo_dance=2, music=2,
+FREE_TIME = dict(kotatsu=3, game=3, claw=3, hug=2, reading=2, pet_cat=2, bmo_dance=2, music=2,
                  laptop=1, learn=1, write=1, tea=2, potion=1, scroll=1, water=1, flower=1, moon=2)
 SCHEDULE = [
     (0, 6, dict(sleep=1)),
