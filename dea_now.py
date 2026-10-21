@@ -188,7 +188,7 @@ def render(assets, now, scene_id=None):
     scene = SCENES[sid]
     n = night_amount(now.hour + now.minute / 60)
     caption = f"DEA {scene['label']}"
-    stamp = f"{now:%H}:00 BUDAPEST"
+    stamp = f"{now:%H:%M} BUDAPEST"                    # when this picture was drawn
     frames = []
     starts, ms = timeline(room, scene)
     for t in starts:
