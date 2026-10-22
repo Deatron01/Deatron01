@@ -94,6 +94,17 @@ FONT = {
 def text_width(s):
     return sum(len(FONT.get(c.upper(), FONT["?"]).split("/")[0]) + 1 for c in s) - 1
 
+# Sun or moon on the right of the caption bar (no clock: the scene shows the time of day).
+SUN = ["...a...", ".a...a.", "..bbb..", "abbcbba", "..bbb..", ".a...a.", "...a..."]
+MOON = ["..mmm..", ".mmm...", "mmm..s.", "mmm....", "mmm....", ".mmm.s.", "..mmm.."]
+ICON_COLORS = {"a": (240, 196, 110), "b": (255, 216, 138), "c": (255, 242, 198), "m": (214, 206, 255), "s": (154, 132, 234)}
+
+def draw_icon(img, x, y, rows):
+    px = img.load()
+    for j, row in enumerate(rows):
+        for i, k in enumerate(row):
+            if k != ".": px[x + i, y + j] = ICON_COLORS[k] + (255,)
+
 def draw_text(img, x, y, s, color):
     px = img.load()
     for c in s:
@@ -188,7 +199,7 @@ def render(assets, now, scene_id=None):
     scene = SCENES[sid]
     n = night_amount(now.hour + now.minute / 60)
     caption = f"DEA {scene['label']}"
-    stamp = f"{now:%H:%M} BUDAPEST"                    # when this picture was drawn
+    icon = MOON if n > 0.5 else SUN
     frames = []
     starts, ms = timeline(room, scene)
     for t in starts:
@@ -199,7 +210,7 @@ def render(assets, now, scene_id=None):
         full.paste(img, (0, 0))
         y = img.height + (BAR - 5) // 2
         draw_text(full, 6, y, caption.upper(), INK)
-        draw_text(full, full.width - 6 - text_width(stamp), y, stamp, VIOLET if n > 0.5 else MUTED)
+        draw_icon(full, full.width - 6 - 7, img.height + (BAR - 7) // 2, icon)
         frames.append(full.resize((full.width * SCALE, full.height * SCALE), Image.NEAREST))
     return sid, frames, ms
 
