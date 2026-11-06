@@ -1,99 +1,107 @@
-<p align="center">
-  <img src="./assets/banner.webp" alt="Dea — Little chaos in a quiet mind." width="100%" />
-</p>
+<img src="./assets/scenes/hero.webp" align="left" width="288" height="216" alt="Dea waving in her room" />
 
-<p align="center">
-  <samp>COMPUTER ENGINEERING · ÓBUDA UNIVERSITY · BIOTECH RESEARCH LAB · BUDAPEST</samp><br />
-  <samp><a href="https://www.linkedin.com/in/nagy-istv%C3%A1n-bence-54b2681b0/">LINKEDIN ↗</a> · <a href="https://deawebdesign.netlify.app/">PORTFOLIO ↗</a></samp>
-</p>
+<h1>Dea <sub><sub><samp>· Nagy István Bence</samp></sub></sub></h1>
+
+<samp>COMPUTER ENGINEERING · ÓBUDA UNIVERSITY</samp>
+
+Research software, mostly: the tools between a person in a VR headset and the data a lab can publish. On the side I build the things I wish existed for free.
+
+<samp><a href="https://www.linkedin.com/in/nagy-istv%C3%A1n-bence-54b2681b0/">LINKEDIN ↗</a> · <a href="https://deawebdesign.netlify.app/">DESIGN PORTFOLIO ↗</a> · BIOTECH LAB · BUDAPEST</samp>
+
+<br clear="left" />
 
 <img src="./assets/divider.svg" width="100%" alt="" />
 
-### <samp>01 — WHAT I BUILD</samp>
+## <samp>SELECTED WORK</samp>
 
-Research software, mostly. I write the tools that sit between a person in a VR headset
-and the data a lab can actually publish: acquisition, sync, robotics bridges, analysis.
-On the side I build the things I wish existed for free.
+<a href="https://github.com/Deatron01/VRTelemetry"><img src="./assets/scenes/vrtelemetry.webp" align="left" width="288" height="216" alt="Dea adjusting her glasses next to a desk with two monitors" /></a>
 
-I like offline-first systems, strict contracts between processes, and taking a problem
-apart before reaching for a solution.
+### <a href="https://github.com/Deatron01/VRTelemetry">VRTelemetry</a>
 
-### <samp>02 — SELECTED WORK</samp>
+<samp>PYTHON · TYPESCRIPT · ELECTRON</samp>
+
+A research instrument for VR studies. Records eye tracking, pose, physiology and hardware state to Parquet at headset rate, scores SSQ / NASA-TLX, and keeps recording when the lab network drops.
+
+<sub><samp><a href="https://github.com/Deatron01/VRTelemetry">REPO ↗</a> · <a href="https://github.com/Deatron01/vrtelemetry-plugin-biosensor">BIOSENSOR PLUGIN ↗</a> · <a href="https://github.com/Deatron01/vrtelemetry-plugin-ros-unity-bridge">ROS / UNITY PLUGIN ↗</a></samp></sub>
+
+<br clear="both" /><br />
+
+<a href="https://github.com/Deatron01/vr-robot-bridge"><img src="./assets/scenes/robot_bridge.webp" align="right" width="288" height="216" alt="Dea tinkering with a gadget beside a claw machine" /></a>
+
+### <a href="https://github.com/Deatron01/vr-robot-bridge">vr-robot-bridge</a>
+
+<samp>C# · PYTHON · ROS · UNITY</samp>
+
+Streams live headset and controller poses into a Gazebo / MoveIt robot hand and mirrors it in a Unity XR scene. OpenXR → REP-103 → Unity coordinate conversion, covered by tests.
+
+<sub><samp><a href="https://github.com/Deatron01/vr-robot-bridge">REPO ↗</a></samp></sub>
+
+<br clear="both" /><br />
+
+<a href="https://github.com/Deatron01/Project-Mimir"><img src="./assets/scenes/mimir.webp" align="left" width="288" height="216" alt="Dea studying a book in front of her bookcase" /></a>
+
+### <a href="https://github.com/Deatron01/Project-Mimir">Project Mimir</a>
+
+<samp>FASTAPI · NODE · POSTGRES · RAG</samp>
+
+Documents in, exam questions out. Semantic chunking and RAG over a vector store, JSON-schema guards against hallucination, and Moodle XML / PDF export.
+
+<sub><samp><a href="https://github.com/Deatron01/Project-Mimir">REPO ↗</a> · <a href="https://mimir-ai.hu/">MIMIR-AI.HU ↗</a></samp></sub>
+
+<br clear="both" /><br />
+
+<a href="https://github.com/Deatron01/TinyTribe"><img src="./assets/scenes/tinytribe.webp" align="right" width="288" height="216" alt="Dea playing a handheld game in front of the TV" /></a>
+
+### <a href="https://github.com/Deatron01/TinyTribe">TinyTribe</a>
+
+<samp>UNITY 6 · C# · PYTORCH · ONNX</samp>
+
+A village survival sim whose villagers are trained, not scripted. A CNN + LSTM policy learns by imitation, DAgger and PPO in a deterministic C# simulator, then plays in-game through ONNX.
+
+<sub><samp><a href="https://github.com/Deatron01/TinyTribe">REPO ↗</a></samp></sub>
+
+<br clear="both" /><br />
+
+<a href="https://github.com/Deatron01/AIWorkGroup"><img src="./assets/scenes/aiworkgroup.webp" align="left" width="288" height="216" alt="Dea dancing with BMO next to her PC" /></a>
+
+### <a href="https://github.com/Deatron01/AIWorkGroup">AIWorkGroup</a>
+
+<samp>PYTHON · DOCKER · OLLAMA</samp>
+
+A fully local multi-agent software foundry. Boss, designer, worker, tester and integrator agents coordinate over an event bus, with human checkpoints and a live dashboard.
+
+<sub><samp><a href="https://github.com/Deatron01/AIWorkGroup">REPO ↗</a></samp></sub>
+
+<br clear="both" /><br />
+
+<a href="https://github.com/Deatron01/FreeTex"><img src="./assets/scenes/freetex.webp" align="right" width="288" height="216" alt="Dea writing in her journal by a lamp" /></a>
+
+### <a href="https://github.com/Deatron01/FreeTex">FreeTex</a>
+
+<samp>JAVASCRIPT · CODEMIRROR 6 · ELECTRON</samp>
+
+Why pay to compile LaTeX? An Overleaf-style editor for the browser or desktop, with its own compile server, local-first projects and BibTeX-aware autocompletion.
+
+<sub><samp><a href="https://github.com/Deatron01/FreeTex">REPO ↗</a> · <a href="https://github.com/Deatron01/FreeTex/releases/latest">DOWNLOAD ↗</a></samp></sub>
+
+<br clear="both" /><br />
+
+## <samp>SMALL TOOLS</samp>
 
 <table>
   <tr>
-    <td><samp>01</samp></td>
-    <td><a href="https://github.com/Deatron01/VRTelemetry"><b>VRTelemetry</b></a><br /><sub><samp>PYTHON · TYPESCRIPT · ELECTRON</samp></sub></td>
-    <td>A research instrument for VR studies. Records eye tracking, pose, physiology and hardware state to Parquet at headset rate, scores SSQ / NASA-TLX, and syncs to a central hub — queueing locally when the lab network is gone. Extended through out-of-process plugins, two of them open source: <a href="https://github.com/Deatron01/vrtelemetry-plugin-biosensor">BLE biosensors</a> and a <a href="https://github.com/Deatron01/vrtelemetry-plugin-ros-unity-bridge">ROS 2 / Unity bridge</a>.</td>
-  </tr>
-  <tr>
-    <td><samp>02</samp></td>
-    <td><a href="https://github.com/Deatron01/vr-robot-bridge"><b>vr-robot-bridge</b></a><br /><sub><samp>C# · PYTHON · ROS · UNITY</samp></sub></td>
-    <td>Streams live HMD and controller poses into a Gazebo / MoveIt robot hand and mirrors it in a Unity XR scene. OpenXR → REP-103 → Unity coordinate conversion, verified by tests; ROS runs in WSL2.</td>
-  </tr>
-  <tr>
-    <td><samp>03</samp></td>
-    <td><a href="https://github.com/Deatron01/Project-Mimir"><b>Project-Mimir</b></a><br /><sub><samp>FASTAPI · NODE · POSTGRES · RAG</samp></sub></td>
-    <td>Microservices that turn PDFs and DOCX files into exam questions. Semantic chunking, RAG over a vector store, JSON-schema guards against hallucination, a <code>SKIP LOCKED</code> worker pool, and hand-built Moodle XML / PDF export.</td>
-  </tr>
-  <tr>
-    <td><samp>04</samp></td>
-    <td><a href="https://github.com/Deatron01/AIWorkGroup"><b>AIWorkGroup</b></a><br /><sub><samp>PYTHON · DOCKER · OLLAMA</samp></sub></td>
-    <td>A fully local multi-agent software foundry. Boss, designer, worker, tester and integrator agents coordinate over an event bus with a DAG tracker, human-in-the-loop checkpoints and a live dashboard — all on local models.</td>
-  </tr>
-  <tr>
-    <td><samp>05</samp></td>
-    <td><a href="https://github.com/Deatron01/TinyTribe"><b>TinyTribe</b></a><br /><sub><samp>UNITY 6 · C# · PYTORCH · ONNX</samp></sub></td>
-    <td>A village survival simulation built to train its villagers instead of scripting them. A deterministic C# rules engine with no Unity types runs both in the game and as a standalone simulator for PyTorch; a CNN + LSTM policy learns by imitation, DAgger and PPO, then plays in-game through ONNX. Every experiment is journaled against a scripted baseline.</td>
-  </tr>
-  <tr>
-    <td><samp>06</samp></td>
-    <td><a href="https://github.com/Deatron01/FreeTex"><b>FreeTex</b></a><br /><sub><samp>JAVASCRIPT · CODEMIRROR 6 · ELECTRON</samp></sub></td>
-    <td>An Overleaf-style LaTeX editor that runs in the browser or as a desktop app with its own compile server. Local-first projects, BibTeX-aware autocompletion, zip import / export.</td>
-  </tr>
-  <tr>
-    <td><samp>07</samp></td>
-    <td><a href="https://github.com/Deatron01/Photoshop"><b>Photoshop</b></a><br /><sub><samp>C# · .NET 8 · WPF</samp></sub></td>
-    <td>An image editor for an image-processing course: filters and analytics split into separate core and analytics libraries behind an MVVM WPF front end.</td>
-  </tr>
-  <tr>
-    <td><samp>08</samp></td>
-    <td><a href="https://github.com/Deatron01/ZizgoKereso"><b>ZizgoKereso</b></a><br /><sub><samp>PYTHON · OPENCV · PYQT6 · C# · BLENDER</samp></sub></td>
-    <td>"Where's Zizgő?" — finds a figure in a busy photo. Blender renders the reference set across camera angles and lighting, then HSV colour-masked template matching locates the best hit, with a live heatmap view. Built twice: PyQt6 + OpenCV and C# WinForms.</td>
-  </tr>
-  <tr>
-    <td><samp>09</samp></td>
-    <td><a href="https://github.com/Deatron01/AdBlocker"><b>AdBlocker</b></a><br /><sub><samp>JAVASCRIPT · MANIFEST V3</samp></sub></td>
-    <td>A Chrome extension on <code>declarativeNetRequest</code> with popup and redirect guards and on-the-fly domain learning. Collects nothing.</td>
-  </tr>
-  <tr>
-    <td><samp>10</samp></td>
-    <td><a href="https://github.com/Deatron01/PhoneMirror"><b>PhoneMirror</b></a><br /><sub><samp>PYTHON · WEB</samp></sub></td>
-    <td>Free, self-hosted phone mirroring that works on any device.</td>
+    <td align="center" width="25%"><a href="https://github.com/Deatron01/PhoneMirror"><img src="./assets/scenes/phonemirror.webp" width="156" height="192" alt="Dea scrolling her phone" /></a><br /><a href="https://github.com/Deatron01/PhoneMirror"><b>PhoneMirror</b></a><br /><sub>Self-hosted phone mirroring.</sub></td>
+    <td align="center" width="25%"><a href="https://github.com/Deatron01/AdBlocker"><img src="./assets/scenes/adblocker.webp" width="156" height="192" alt="Dea shaking her head no" /></a><br /><a href="https://github.com/Deatron01/AdBlocker"><b>AdBlocker</b></a><br /><sub>Blocks ads. Collects nothing.</sub></td>
+    <td align="center" width="25%"><a href="https://github.com/Deatron01/Photoshop"><img src="./assets/scenes/photoshop.webp" width="156" height="192" alt="Dea taking a photo" /></a><br /><a href="https://github.com/Deatron01/Photoshop"><b>Photoshop</b></a><br /><sub>A WPF image editor.</sub></td>
+    <td align="center" width="25%"><a href="https://github.com/Deatron01/ZizgoKereso"><img src="./assets/scenes/zizgo.webp" width="156" height="192" alt="Dea looking around" /></a><br /><a href="https://github.com/Deatron01/ZizgoKereso"><b>ZizgoKereso</b></a><br /><sub>Where's Zizgő?</sub></td>
   </tr>
 </table>
 
-<details>
-<summary><samp>MORE — SMALLER PROJECTS &amp; COURSEWORK</samp></summary>
-<br />
-<table>
-  <tr><td><a href="https://github.com/Deatron01/Gen_AI_DP3HYC">Gen_AI_DP3HYC</a></td><td><sub><samp>PYTORCH LIGHTNING</samp></sub></td><td>Two generative models, a DCGAN and a VAE, trained to produce flower images.</td></tr>
-  <tr><td><a href="https://github.com/Deatron01/Szakszigo-Gyakorlo">Szakszigo-Gyakorlo</a></td><td><sub><samp>C#</samp></sub></td><td>Every classic programming theorem implemented and commented, for exam practice.</td></tr>
-  <tr><td><a href="https://github.com/Deatron01/Erika-konyhaja">Erika-konyhaja</a></td><td><sub><samp>VITE · TAILWIND</samp></sub></td><td>A live website for a small kitchen business.</td></tr>
-  <tr><td><a href="https://github.com/Deatron01/NIXSG1LBNE-SZTGUI_LA_02">NIXSG1LBNE-SZTGUI_LA_02</a></td><td><sub><samp>COURSEWORK</samp></sub></td><td>Software technology &amp; GUI design.</td></tr>
-</table>
-</details>
+## <samp>STACK</samp>
 
-### <samp>03 — STACK</samp>
+<picture><source media="(prefers-color-scheme: light)" srcset="https://skillicons.dev/icons?i=python,cs,ts,js,cpp,latex,unity,ros,blender,electron,fastapi,postgres,docker,linux&perline=14&theme=light" /><img src="https://skillicons.dev/icons?i=python,cs,ts,js,cpp,latex,unity,ros,blender,electron,fastapi,postgres,docker,linux&perline=14&theme=dark" height="40" alt="Python · C# · TypeScript · JavaScript · C++ · LaTeX · Unity · ROS · Blender · Electron · FastAPI · PostgreSQL · Docker · Linux" /></picture>
 
-<table>
-  <tr><td><samp>LANGUAGES</samp></td><td><picture><source media="(prefers-color-scheme: light)" srcset="https://skillicons.dev/icons?i=python,cs,ts,js,cpp,php,latex&perline=10&theme=light" /><img src="https://skillicons.dev/icons?i=python,cs,ts,js,cpp,php,latex&perline=10&theme=dark" alt="Python · C# · TypeScript · JavaScript · C++ · PHP · LaTeX" height="40" /></picture></td></tr>
-  <tr><td><samp>SYSTEMS</samp></td><td><picture><source media="(prefers-color-scheme: light)" srcset="https://skillicons.dev/icons?i=ros,unity,godot,blender,electron,fastapi,nodejs&perline=10&theme=light" /><img src="https://skillicons.dev/icons?i=ros,unity,godot,blender,electron,fastapi,nodejs&perline=10&theme=dark" alt="ROS / ROS 2 · Unity XR · Godot · Blender · Electron · FastAPI · Node.js" height="40" /></picture><br /><sub>+ OpenXR</sub></td></tr>
-  <tr><td><samp>DATA</samp></td><td><picture><source media="(prefers-color-scheme: light)" srcset="https://skillicons.dev/icons?i=postgres&perline=10&theme=light" /><img src="https://skillicons.dev/icons?i=postgres&perline=10&theme=dark" alt="PostgreSQL" height="40" /></picture><br /><sub>+ Parquet · MinIO · vector search / RAG · local LLMs (Ollama)</sub></td></tr>
-  <tr><td><samp>TOOLING</samp></td><td><picture><source media="(prefers-color-scheme: light)" srcset="https://skillicons.dev/icons?i=git,docker,linux,githubactions,vscode&perline=10&theme=light" /><img src="https://skillicons.dev/icons?i=git,docker,linux,githubactions,vscode&perline=10&theme=dark" alt="Git · Docker · Linux · GitHub Actions · VS Code" height="40" /></picture><br /><sub>+ WSL2</sub></td></tr>
-</table>
-
-### <samp>04 — DEA, RIGHT NOW</samp>
+## <samp>DEA, RIGHT NOW</samp>
 
 <p align="center">
   <img src="https://raw.githubusercontent.com/Deatron01/Deatron01/dea-output/dea.webp" width="100%" alt="What Dea is doing right now in her pixel-art home, redrawn through the day" />
@@ -101,20 +109,6 @@ apart before reaching for a solution.
 
 <p align="center"><sub><samp>BUDAPEST TIME · ASLEEP 00:00–06:00</samp></sub></p>
 
-### <samp>05 — ACTIVITY</samp>
-
-<p align="center">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Deatron01/Deatron01/output/snake-dark.svg" />
-    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Deatron01/Deatron01/output/snake-light.svg" />
-    <img alt="Contribution graph being eaten by a snake" src="https://raw.githubusercontent.com/Deatron01/Deatron01/output/snake-light.svg" />
-  </picture>
-</p>
-
 <img src="./assets/divider.svg" width="100%" alt="" />
 
-<p align="center">
-  <img src="./assets/icon.png" width="56" alt="Dea" /><br />
-  <sub><i>Little chaos in a quiet mind.</i></sub><br />
-  <sub><samp>DESIGN WORK LIVES AT <a href="https://deawebdesign.netlify.app/">DEAWEBDESIGN.NETLIFY.APP</a></samp></sub>
-</p>
+<p align="center"><sub><i>Little chaos in a quiet mind.</i></sub></p>
